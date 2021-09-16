@@ -1,0 +1,45 @@
+.hero {
+    padding: 10rem 0;
+    position: relative;
+}
+.hero .img {
+    display: none;
+}
+.hero .title {
+    margin-bottom: 5rem;
+}
+.hero__btn {
+    background-color: var(--sub-bg-color);
+    padding: 3rem 5rem;
+    color: #eda502;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    font-size: 2rem;
+    display: inline-block;
+    border: .3rem solid var(--sub-bg-color);
+}
+
+@media screen and (min-width: 1024px) {
+    .hero .img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 2rem;
+        -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+    }
+    .hero__block {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 5rem;
+    }
+    .hero__btn {
+        transition: all 0.3s ease-in-out;
+    }
+    .hero__btn:hover {
+        background-color: transparent;
+        color: var(--sub-bg-color);
+    }
+}
